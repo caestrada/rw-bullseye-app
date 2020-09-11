@@ -1,16 +1,14 @@
 # bullseye
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## TODO LIST
+- [X] Add the 'Hit Me' button
+- [X] Show a popup when the user tapbs it
+- [ ] Put game info on screen
+- [ ] Put slider on screen: 1 ↔ 100
+- [ ] Read value of the slider
+- [ ] Generate random number
+- [ ] Calculate and show score
+- [ ] Add 'start over' button
+- [ ] Reset game if you tap it
+- [ ] Put app in landscape
+- [ ] Make it look pretty :]
