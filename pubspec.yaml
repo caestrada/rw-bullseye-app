@@ -1,0 +1,13 @@
+name: BullsEye
+description: Your First Flutter App
+
+dependencies:
+    flutter:
+        sdk: flutter
+
+dev-dependencies:
+    flutter_test:
+        sdk: flutter
+
+flutter:
+    uses-material-design: true
