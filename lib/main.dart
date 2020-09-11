@@ -31,7 +31,7 @@ class _GamePageState extends State<GamePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Hello BullsEye',
+              'Welcome to my first app!',
               style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
             ),
             FlatButton(
