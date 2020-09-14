@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(BullsEyeApp());
 
 class BullsEyeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+
     return MaterialApp(
       title: 'BullsEye',
       theme: ThemeData(primarySwatch: Colors.blue),
@@ -24,7 +30,6 @@ class GamePage extends StatefulWidget {
 
 class _GamePageState extends State<GamePage> {
   bool _alertIsVisible = true;
-  bool _whoIsThereAlert = false;
 
   @override
   Widget build(BuildContext context) {
@@ -48,42 +53,9 @@ class _GamePageState extends State<GamePage> {
                 style: TextStyle(color: Colors.blue),
               ),
             ),
-            FlatButton(
-              onPressed: () {
-                this._whoIsThereAlert = true;
-                this._showWhosThere(context);
-              },
-              child: Text(
-                'Knock Knock!',
-                style: TextStyle(color: Colors.blue),
-              ),
-            )
           ],
         ),
       ),
-    );
-  }
-
-  void _showWhosThere(BuildContext context) {
-    Widget okButton = FlatButton(
-      child: Text('Owls say who?'),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
-    );
-
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text("Who's there?"),
-          content: Text('Owls say'),
-          actions: [
-            okButton
-          ],
-          elevation: 5.0,
-        );
-      },
     );
   }
 
