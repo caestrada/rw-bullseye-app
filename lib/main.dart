@@ -1,3 +1,6 @@
+import 'package:BullsEye/control.dart';
+import 'package:BullsEye/prompt.dart';
+import 'package:BullsEye/score.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -38,20 +41,15 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Welcome to my first app!',
-              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
-            ),
+            Prompt(targetValue: 100),
+            Control(),
             FlatButton(
-              onPressed: () {
-                this._alertIsVisible = true;
-                _showAlert(context);
-                print('Button pressed!');
-              },
-              child: Text(
-                'Hit Me!',
-                style: TextStyle(color: Colors.blue),
-              ),
+              onPressed: null,
+              child: Text('Hit Me!'),
+            ),
+            Score(
+              round: 999,
+              totalScore: 9999,
             ),
           ],
         ),
