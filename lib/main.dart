@@ -54,7 +54,9 @@ class _GamePageState extends State<GamePage> {
               model: _model,
             ),
             FlatButton(
-              onPressed: null,
+              onPressed: () {
+                _showAlert(context);
+              },
               child: Text('Hit Me!'),
             ),
             Score(
@@ -82,7 +84,7 @@ class _GamePageState extends State<GamePage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Hello there!'),
-          content: Text('This is my first pop-up.'),
+          content: Text("The slider's value is ${_model.current}"),
           actions: [
             okButton
           ],
