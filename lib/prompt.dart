@@ -10,7 +10,7 @@ class Prompt extends StatelessWidget {
     return Column(
       children: [
         Text('PUT THE BULLSEYE AS CLOSE AS YO CAN TO'),
-        Text('50'),
+        Text('${targetValue}'),
       ],
     );
   }

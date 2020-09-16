@@ -1,5 +1,7 @@
 # bullseye
 
+[Your First Flutter App](https://www.raywenderlich.com/13739693-your-first-flutter-app)
+
 ## TODO LIST
 - [X] Add the 'Hit Me' button
 - [X] Show a popup when the user tapbs it
