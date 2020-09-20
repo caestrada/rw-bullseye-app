@@ -1,5 +1,6 @@
 import 'package:BullsEye/textstyles.dart';
 import 'package:flutter/material.dart';
+import 'package:BullsEye/styledbutton.dart';
 
 class Score extends StatelessWidget {
   const Score({Key key, @required this.totalScore, @required this.round, @required this.onStartOver}) : super(key: key);
@@ -13,11 +14,11 @@ class Score extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        FlatButton(
+        StyledButton(
           onPressed: () {
             onStartOver();
           },
-          child: Text('Start Over'),
+          icon: Icons.refresh,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 32.0, right: 32.0),
@@ -49,9 +50,9 @@ class Score extends StatelessWidget {
             ],
           ),
         ),
-        FlatButton(
+        StyledButton(
           onPressed: () {},
-          child: Text('Info'),
+          icon: Icons.info,
         ),
       ],
     );
